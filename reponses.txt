@@ -1,0 +1,8 @@
+Méthodes d'authentification:
+	Sur notre capture, seul EAP-PEAP est proposé au client.
+	On utilise donc EAP-PEAP.
+
+Question 3:
+	a. Oui, le serveur envoie au client un certificat afin que celui-ci puisse l'identifier.
+	b. Non. Le client n'envoie pas de certificat au serveur. L'authentification de celui-ci s'effectue donc plus tard
+	   en interne.
