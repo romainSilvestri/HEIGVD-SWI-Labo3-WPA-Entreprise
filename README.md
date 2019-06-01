@@ -98,18 +98,33 @@ Pour implémenter l’attaque :
 > **_Question :_** Quelles modifications sont nécessaires dans la configuration de hostapd-wpe pour cette attaque ?
 > 
 > **_Réponse :_** 
+Nous avons dû modifier l'interface et le nom du SSID.
+![alt text](./Captures/modif_etape2.png)  
+![alt text](./Captures/modif_etape2_2.png)  
 
 ---
 
 > **_Question:_** Quel type de hash doit-on indiquer à john pour craquer le handshake ?
 > 
 > **_Réponse:_** 
+Pour craquer le mot de passe, nous avons plutôt utilisé l'outil *asleap* qui est spécialement concu pour ce genre d'attaque.  
+Il faut lui donner en paramètres: un dictionnaire (ici nous avons utilisé *rockyou* qui est disponible par défaut sur kali), le *challenge* et la *response*.  
+![alt text](./Captures/pwd.png)  
+En quelque seconde, on trouve le mot de passe qui a été utilisé pour se connecter.
 
 ---
 
 > **_Question:_** 6.	Quelles méthodes d’authentification sont supportées par hostapd-wpe ?
 > 
 > **_Réponse:_**
+> Les informations ci-dessous proviennent de la documentation de hostapd-wpe qui est disponible [ici](https://tools.kali.org/wireless-attacks/hostapd-wpe).
+> 1. EAP-FAST/MSCHAPv2 (Phase 0)
+> 2. PEAP/MSCHAPv2
+> 3. EAP-TTLS/MSCHAPv2
+> 4. EAP-TTLS/MSCHAP
+> 5. EAP-TTLS/CHAP
+> 6. EAP-TTLS/PAP
+
 
 
 ## Quelques éléments à considérer :
