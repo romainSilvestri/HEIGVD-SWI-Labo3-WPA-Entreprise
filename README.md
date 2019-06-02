@@ -42,7 +42,7 @@ Romain Silvestri & Romain Gallay
 		**_Le nonce correspond au champ random dans les packets:_**
 
 		![](./Captures/Client_ID_Random.PNG "packet du client")
-		![](./Captures/Serveur_ID_Random_TLS "packet du server")
+		![](./Captures/Serveur_ID_Random_TLS.PNG "packet du server")
 
 		- Session ID
 		**_Comme on peut l'observer sur le screen ci-dessus, la session ID du server correspond à cfd09ac... Celle du client à une longeur de 0, elle n'est donc pas définie_**
@@ -101,8 +101,8 @@ Romain Silvestri & Romain Gallay
 > 
 > **_Réponse :_** 
 Nous avons dû modifier l'interface et le nom du SSID.
-![alt text](./Captures/modif_etape2.png)  
-![alt text](./Captures/modif_etape2_2.png)  
+![](./Captures/modif_etape2.PNG)  
+![](./Captures/modif_etape2_2.PNG)  
 
 ---
 
@@ -111,7 +111,7 @@ Nous avons dû modifier l'interface et le nom du SSID.
 > **_Réponse:_** 
 Pour craquer le mot de passe, nous avons plutôt utilisé l'outil *asleap* qui est spécialement concu pour ce genre d'attaque.  
 Il faut lui donner en paramètres: un dictionnaire (ici nous avons utilisé *rockyou* qui est disponible par défaut sur kali), le *challenge* et la *response*.  
-![alt text](./Captures/pwd.png)  
+![alt text](./Captures/pwd.PNG)  
 En quelque seconde, on trouve le mot de passe qui a été utilisé pour se connecter.
 
 ---
